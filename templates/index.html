@@ -16,10 +16,41 @@
   <div class="searchDiv">
       <input id="canvaQuery" type="text" class="search" placeholder="What's on your mind..">
       <button id="submitCanva" type="submit" class="button">✎</button>
+</div>
+
+<div class="loader" style="display:none" >
+  <div class="loader-inner">
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+
+    <div>
+      <h1>Store is being created</h1>
+    </div>
+
 
   </div>
-    <div class="cursor"></div>
-  <script src="{{url_for('static', filename='script.js')}}"></script>
+
+
+
+</div>
+
+
+<div class="cursor"></div>
+<script src="{{url_for('static', filename='script.js')}}"></script>
+
 
 </body>
 </html>
