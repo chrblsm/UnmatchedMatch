@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="http://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Unmatched Match</title>
+</head>
+<body background="{{url_for('static', filename='images/background.jpg')}}">
+    <style>@import url('http://fonts.cdnfonts.com/css/glacial-indifference-2');</style>
+  <h1>U N M A T C H E D</h1>
+  <h2>MATCH</h2>
+  <div class="searchDiv">
+      <input id="canvaQuery" type="text" class="search" placeholder="What's on your mind..">
+      <button id="submitCanva" type="submit" class="button">✎</button>
+
+  </div>
+    <div class="cursor"></div>
+  <script src="{{url_for('static', filename='script.js')}}"></script>
+
+</body>
+</html>

@@ -11,3 +11,25 @@ const cursor = document.querySelector('.cursor');
                 cursor.classList.remove("expand");
             }, 500)
         })
+
+
+
+$("#submitCanva").click(function() {
+    query = $("#canvaQuery").val()
+    alert(query);
+    $.ajax({
+        type:"POST",
+        url:'/sendSignal',
+        data: query,
+        contentType: "application/json",
+        dataType: 'json',
+        beforeSend: function(){
+            alert("COOKING");
+            // $("#loader").show();
+           },
+
+       
+});
+  });
+  
+  
