@@ -11,3 +11,11 @@ const cursor = document.querySelector('.cursor');
                 cursor.classList.remove("expand");
             }, 500)
         })
+
+
+
+$("#submitCanva").click(function() {
+    alert( "Canva is being sent. Call AJAX" );
+  });
+  
+  
