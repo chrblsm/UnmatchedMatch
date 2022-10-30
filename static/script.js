@@ -14,7 +14,7 @@ const cursor = document.querySelector('.cursor');
 
 
 
-$("#submitCanva").click(function() {
+$("#submitCanva").click(  function() {
     query = $("#canvaQuery").val()
     alert(query);
     $.ajax({
@@ -23,10 +23,15 @@ $("#submitCanva").click(function() {
         data: query,
         contentType: "application/json",
         dataType: 'json',
-        beforeSend: function(){
-            alert("COOKING");
+        beforeSend: async function(){
+            $(".loader").show();
             // $("#loader").show();
            },
+        
+        complete : function(data){
+        // display messgae on request completed
+        window.location='https://ai-davinci.myshopify.com/'
+        }
 
        
 });
