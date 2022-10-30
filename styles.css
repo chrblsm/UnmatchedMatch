@@ -1,0 +1,121 @@
+
+h1 {
+  color: white;
+  font-family: 'Glacial Indifference', sans-serif;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin: 11%;
+  font-size: 5.5em;
+}
+h2 {
+  color: white;
+  font-family: 'Glacial Indifference', sans-serif;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin-top: -11%;
+  font-size: 3em;
+
+}
+body {
+
+ background-color: #cccccc;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+}
+
+.search{
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px 0 0 5px;
+  position: relative;
+  margin-left: -15%;
+  width: 300px;
+  height: 46px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  background: #fff;
+  text-align: center;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.searchDiv{
+  width: 30%;
+  position: relative;
+  top: 60%;
+  margin-top: 6%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid #2f3d43;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid #035A5D;
+}
+
