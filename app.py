@@ -29,7 +29,7 @@ def sendSms():
 
     print(message.sid)
 
-    time.sleep(3)
+    time.sleep(240)
 
     return jsonify({'result':"Done"})
 
