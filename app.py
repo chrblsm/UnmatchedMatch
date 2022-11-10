@@ -23,8 +23,8 @@ def sendSms():
     message = client.messages \
                     .create(
                         body=f"query String: {queryString}",
-                        from_='+16187624574',
-                        to='+18322787527'
+                        from_='+',
+                        to='+'
                     )
 
     print(message.sid)
